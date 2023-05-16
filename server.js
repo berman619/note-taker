@@ -44,23 +44,24 @@ app.post('/api/notes', (req, res) => {
     const notes = JSON.parse(data);
     // Add a unique ID to the new note
     const newNote = {
-        noteTitle = title,
-        noteText = text,
+        title: noteTitle,
+        text: noteText,
         review_id: uuid(),
       };
     // Add the new note to the array
     notes.push(newNote);
-    // Convert the updated array back into a JSON string using JSON.stringify
-      console.log(`Updated note list: ${JSON.stringify(newNoteList)}`);
     // use fs.writeFile to write the updated JSON string back to the db.json file
-    fs.writeFile(path.join(__dirname, './db/db.json'), 'utf8', (err, data) => {
+    fs.writeFile(path.join(__dirname, './db/db.json'), JSON.stringify(notes), (err) => {
         if (err) {
             console.error(err);
             return res.status(500).json({
                 error: "Failed to add note."
             });
         }
-}
+        res.json(newNote);
+        });
+    });
+});
 
 app.listen(PORT, () =>
   console.log(`Now listening at http://127.0.0.1:${PORT}`)
