@@ -2,6 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Deployed Application
+Application is deployed on Heroku [here](https://zachbergernotetaker.herokuapp.com/). 
+
 ## Description 
 This is a full stack web application that allows users to write, save, and delete notes. With this Note Taker, you can create a note with a title and text content, view previously saved notes, and delete notes that are no longer needed. The application saves and retrieves note data from a JSON file.
 
@@ -11,6 +14,7 @@ This is a full stack web application that allows users to write, save, and delet
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
+- [Credits](#credits)
 
 ## Usage
 Before using the Note Taker, make sure you have [Node.js](https://nodejs.org/en/) installed in your environment.
@@ -36,3 +40,6 @@ This project is licensed under the terms of the [MIT](https://opensource.org/lic
 
 ## Questions
 If you have any questions, please reach out to me via e-mail at zachhberger@gmail.com or on [GitHub](https://github.com/berman619).
+
+## Credits
+This project was built using starter code provided by [Columbia Coding Bootcamp](https://github.com/coding-boot-camp/miniature-eureka).
