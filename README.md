@@ -5,6 +5,10 @@
 ## Deployed Application
 Application is deployed on Heroku [here](https://zachbergernotetaker.herokuapp.com/). 
 
+## Screenshot 
+
+![Note Taker Screenshot](/public/assets/notetaker.png)
+
 ## Description 
 This is a full stack web application that allows users to write, save, and delete notes. With this Note Taker, you can create a note with a title and text content, view previously saved notes, and delete notes that are no longer needed. The application saves and retrieves note data from a JSON file.
 
